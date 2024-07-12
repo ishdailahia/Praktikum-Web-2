@@ -16,8 +16,9 @@
                       alt="User Image">
               </div>
               <div class="info">
-                  <a href="#" class="d-block">Alexander Pierce</a>
-              </div>
+                  <a href="#" class="d-block">{{ strtoupper(Auth::user()->name) }}</a>
+                  <span> {{ strtoupper(Auth::user()->role) }} </span>
+            </div>
           </div>
 
           <!-- SidebarSearch Form -->
